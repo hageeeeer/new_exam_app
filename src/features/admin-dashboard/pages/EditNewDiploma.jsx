@@ -1,11 +1,11 @@
 import { Button } from "@heroui/react";
-import React from "react";
 
-export default function AddNewDiploma() {
+
+export default function EditNewDiploma() {
   return (
     <div>
       <p className="text-[14px] text-custom-gray-400 py-4 px-2">
-        Diplomas / <span className="text-blue-600">Add New Diploma</span>{" "}
+        Diplomas / <span className="text-blue-600">Edit New Diploma</span>{" "}
       </p>
 
       <div className="flex justify-end  items-center  sm:gap-0 gap-2 px-4 py-2 border-2 border-gray-100">

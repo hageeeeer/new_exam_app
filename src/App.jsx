@@ -11,6 +11,7 @@ import DiplomasAdmin from "./features/admin-dashboard/pages/Diplomas";
 import Diploma from "./features/admin/components/Diplomas";
 import DiplomaAdminDetails from "./features/admin-dashboard/pages/DiplomaDetails";
 import AddNewDiploma from "./features/admin-dashboard/pages/AddNewDiploma";
+import EditNewDiploma from "./features/admin-dashboard/pages/EditNewDiploma";
 
 export default function App() {
   // routing pathes
@@ -33,7 +34,8 @@ export default function App() {
         { path: "admin/questions", element: <QuestionsPage /> },
         { path: "diplomadmin/:id", element: <DiplomaAdminDetails /> },
         { path: "admin/exams", element: <ExamsPage /> },
-        { path: "AddNewDiploma", element: <AddNewDiploma /> },
+        { path: "/AddNewDiploma", element: <AddNewDiploma /> },
+        { path: "/EditNewDiploma", element: <EditNewDiploma /> },
 
         // student
         { path: "student/answers", element: <StudentAnswers /> },
