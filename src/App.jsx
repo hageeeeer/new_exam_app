@@ -8,6 +8,8 @@ import LoginPage from "./features/Authentication/LoginPage";
 import RegisterPage from "./features/Authentication/RegisterPage";
 import DashboardLayout from "./layout/DashboardLayout";
 import Diplomas from "./features/admin-dashboard/pages/Diplomas";
+import DiplomasAdmin from "./features/admin-dashboard/pages/Diplomas";
+import Diploma from "./features/admin/components/Diplomas";
 
 export default function App() {
   // routing pathes
@@ -26,13 +28,14 @@ export default function App() {
       element: <DashboardLayout />,
       children: [
         // admin
-        { index: true, element: <Diplomas></Diplomas> },
+        { index: true, element: <DiplomasAdmin></DiplomasAdmin> },
         { path: "admin/questions", element: <QuestionsPage /> },
         { path: "admin/exams", element: <ExamsPage /> },
 
         // student
         { path: "student/answers", element: <StudentAnswers /> },
         { path: "student/exams", element: <StudentExams /> },
+        { path: "student/diploma", element: <Diploma /> },
       ],
     },
   ]);
