@@ -1,5 +1,6 @@
 import {Table} from "@heroui/react";
 import { Options } from "./Options";
+import { Link } from "react-router-dom";
 
 export function AdminDiplomaTable() {
   return (
@@ -15,7 +16,10 @@ export function AdminDiplomaTable() {
           <Table.Body>
             <Table.Row>
               <Table.Cell>
+                <Link to={`diplomadmin/1`}>
+                
                 <img className="w-50" src="https://placehold.net/400x400.png" alt="" />
+                </Link>
               </Table.Cell>
               <Table.Cell>CEO</Table.Cell>
               <Table.Cell>

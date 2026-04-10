@@ -7,9 +7,9 @@ import AuthLayout from "./layout/AuthLayout";
 import LoginPage from "./features/Authentication/LoginPage";
 import RegisterPage from "./features/Authentication/RegisterPage";
 import DashboardLayout from "./layout/DashboardLayout";
-import Diplomas from "./features/admin-dashboard/pages/Diplomas";
 import DiplomasAdmin from "./features/admin-dashboard/pages/Diplomas";
 import Diploma from "./features/admin/components/Diplomas";
+import DiplomaAdminDetails from "./features/admin-dashboard/pages/DiplomaDetails";
 
 export default function App() {
   // routing pathes
@@ -30,6 +30,7 @@ export default function App() {
         // admin
         { index: true, element: <DiplomasAdmin></DiplomasAdmin> },
         { path: "admin/questions", element: <QuestionsPage /> },
+        { path: "diplomadmin/:id", element: <DiplomaAdminDetails /> },
         { path: "admin/exams", element: <ExamsPage /> },
 
         // student
