@@ -31,9 +31,10 @@ export default function App() {
       children: [
         // admin
         { index: true, element: <DiplomasAdmin></DiplomasAdmin> },
-        { path: "admin/questions", element: <QuestionsPage /> },
-        { path: "diplomadmin/:id", element: <DiplomaAdminDetails /> },
-        { path: "admin/exams", element: <ExamsPage /> },
+        { path: "/admin/questions", element: <QuestionsPage /> },
+        { path: "/admin/exams", element: <ExamsPage /> },
+        { path: "/diplomadmin/:id", element: <DiplomaAdminDetails /> },
+        { path: "/admin/exams", element: <ExamsPage /> },
         { path: "/AddNewDiploma", element: <AddNewDiploma /> },
         { path: "/EditNewDiploma", element: <EditNewDiploma /> },
 

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export function AdminDiplomaTable() {
   return (
-    <Table>
+    <Table className="my-5">
       <Table.ScrollContainer>
         <Table.Content aria-label="Team members" >
           <Table.Header>
